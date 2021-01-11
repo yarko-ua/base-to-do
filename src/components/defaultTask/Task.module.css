@@ -1,0 +1,19 @@
+.executed {
+  background-color: green;
+}
+.default {
+  background-color: #cecece;
+  color: green;
+}
+.task {
+  font-size: 18px;
+  /* width: 75vmin; */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  padding: 10px 15px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+}
