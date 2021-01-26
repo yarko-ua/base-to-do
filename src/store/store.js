@@ -1,19 +1,8 @@
 import { action, createStore } from "easy-peasy";
 
 const store = createStore({
-  todos: [],
   tasksDoneCount: 0,
   tasksUndoneCount: 0,
-  addToDo: action((state, payload) => {
-    state.todos.push({ text: payload, done: false });
-    // todos: [...state.todos, { text: payload, done: false }],
-  }),
-  checkTask: action((state, payload) => {
-    state.todos[payload].done = true;
-  }),
-  deleteTask: action((state, payload) => {
-    state.todos = state.todos.filter((task, index) => index !== payload);
-  }),
   updateTasksCount: action((state, payload) => {
     switch (payload.type) {
       case "del":
